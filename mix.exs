@@ -9,7 +9,6 @@ defmodule StdJsonIo.Mixfile do
     [app: :std_json_io,
      name: "StdJsonIo",
      version: @version,
-     package: @package,
      elixir: "~> 1.1",
      source_url: @url,
      build_embedded: Mix.env == :prod,
@@ -37,7 +36,7 @@ defmodule StdJsonIo.Mixfile do
     [
       {:porcelain, "~> 2.0"},
       {:poolboy, "~> 1.5.1"},
-      {:poison, "~> 2.1.0"},
+      {:poison, ">= 2.1.0"},
       {:fs, "~> 0.9.1"},
     ]
   end
